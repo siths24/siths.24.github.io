@@ -4,143 +4,204 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Mind & Body</title>
+    <title>Tickatary - homepage</title>
+    <link rel="stylesheet" href="style_2.css" />
   </head>
-
   <body>
-    <section class="front-page">
-      <video autoplay loop muted plays-inline class="back-video">
-        <source src="content\gallery.mp4" type="video/mp4" />
-      </video>
-      <nav>
-        <div class="logo">
-          <img src="./content/Hybrid-Conference-Technology.jpg" alt="logo" />
-          <h1>Ticketary</h1>
-        </div>
-        <div class="links">
-          <a href="#">home</a>
-          <a href="#">quiz</a>
-          <a href="#">sitemap</a>
-          <a href="#">feedback</a>
-        </div>
-        <svg
-          width="44"
-          height="18"
-          viewBox="0 0 44 18"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line
-            class="line"
-            y1="1"
-            x2="44"
-            y2="1"
-            stroke="white"
-            stroke-width="2"
-          />
-          <line
-            class="line"
-            y1="9"
-            x2="27"
-            y2="9"
-            stroke="white"
-            stroke-width="2"
-          />
-          <line
-            class="line"
-            y1="17"
-            x2="11"
-            y2="17"
-            stroke="white"
-            stroke-width="2"
-          />
-        </svg>
-      </nav>
-      <div class="selling-point">
-        <h2>Welcome to Ticketary!</h2>
-        <h3>
+    <nav class="navbar">
+      <h1 class="logo">Ticketary</h1>
+      <ul class="nav-links">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Quiz</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+      <a href="#"><img src="./shop.svg" alt="Shop" class="shop-btn"></a>
+      <img src="./bar_3.svg" alt="Menu" class="menu-btn" />
+    </nav>
+    <header>
+      <div class="header-content">
+        <h1>Welcome to Ticketary</h1>
+        <div class="line"></div>
+        <h2> 
           The one-stop destination for all your event ticketing needs! Whether
           you are a fan of music, sports, theatre or any other live
           entertainment, we have got you covered with a wide selection of
           tickets for various events.
-        </h3>
-        <div class="ctas">
-          <a href="#classes"
-            ><button class="cta-sec">Upcoming Events</button></a
-          >
-          <button class="cta-main">
-            <a href="#">Explore</a>
-          </button>
+        </h2>
+        <a href="#events" class="ctn">Upcoming Events</a>
+      </div>
+    </header>
+
+    <section id="events">
+      <div class="title">
+        <h1>Upcoming Events</h1>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./content/2.png" alt="poster" />
+          <h4>Lorem Ipsum</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
+          <a href="#" class="ctn">Buy Tickets</a>
+        </div>
+        <div class="col">
+          <img src="./content/1.png" alt="poster" />
+          <h4>Lorem Ipsum</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
+          <a href="#" class="ctn">Buy Tickets</a>
+        </div>
+        <div class="col">
+          <img src="./content/3.png" alt="poster" />
+          <h4>Lorem Ipsum</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
+          <a href="#" class="ctn">Buy Tickets</a>
+        </div>
+        <div class="col">
+          <img src="./content/4.png" alt="poster" />
+          <h4>Lorem Ipsum</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
+          <a href="#" class="ctn">Buy Tickets</a>
         </div>
       </div>
     </section>
-    <section id="classes">
-      <div class="classes-description">
-        <h2>Upcoming Events</h2>
-        <h3></h3>
-      </div>
-      <div class="posters">
-        <div class="art">
-          <a href=""><img src="./content/2.png" alt="poster" /></a>
-        </div>
-        <div class="music">
-          <a href=""><img src="./content/1.png" alt="poster" /></a>
-        </div>
-        <div class="sports">
-          <a href=""><img src="./content/3.png" alt="poster" /></a>
-        </div>
-        <div class="conference">
-          <a href=""><img src="./content/4.png" alt="poster" /></a>
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="our-story">
-        <h2>Our story...</h2>
+
+    <section class="exhibit">
+      <div class="exhibit-content">
+        <h1>Exhibits</h1>
+        <div class="line"></div>
         <p>
-          Our user-friendly website makes it easy for you to find the evnt you
-          are looking for and purchase tickets.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus.
         </p>
+        <a href="#" class="ctn">Learn more</a>
       </div>
-      <img src="./content/1.png" alt="our-story" />
+      <section class="exhibit-img">
+        <img src="./content/exhibition.1.jpg" alt="poster" />
+      </section>
+    </section>
+
+    <section class="sports">
+      <video autoplay loop muted plays-inline class="sports-vid">
+        <source
+          src="./content/Sony FX3 Cinematic 4k- NBA Bulls vs Clippers.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="sports-content">
+        <h1>Sports & Fitness</h1>
+        <div class="line"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus.
+        </p>
+        <a href="#" class="ctn">Learn more</a>
+      </div>
+    </section>
+
+    <section class="tours">
+      <div class="row">
+        <div class="col content-col">
+          <h1>Events</h1>
+          <div class="line"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+          <a href="#" class="ctn">Learn more</a>
+        </div>
+        <div class="col image-col">
+          <div class="image-gallery">
+            <img src="./content/concert.10.jpg" alt="ad" />
+            <img src="./content/concert.11.jpg" alt="ad" />
+            <img src="./content/concert.5.jpg" alt="ad" />
+            <img src="./content/concert.6.jpg" alt="ad" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="exhibit">
+      <section class="exhibit-img">
+        <img src="./content/concert.4.jpg" alt="poster" />
+      </section>
+      <div class="exhibit-content">
+        <h1>Performing Arts</h1>
+        <div class="line"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus.
+        </p>
+        <a href="#" class="ctn">Learn more</a>
+      </div>
     </section>
 
     <section class="footer">
-      <div class="footer-container">
-        <div class="socials">
-          <a href="#">icon</a>
-          <a href="#">icon</a>
-          <a href="#">icon</a>
-          <a href="#">icon</a>
+      <div class="footer-row">
+        <div class="footer-col">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
         </div>
-        <div class="footer-links">
-          <a href="#">home</a>
-          <a href="#">quiz</a>
-          <a href="#">sitemap</a>
-          <a href="#">feedback</a>
+        <div class="footer-col">
+          <h3>Office <div class="underline"><span></span></div></h3>
+          <p>4039 Sand Fork Road</p>
+          <p>Plymouth</p>
+          <p>Indiana</p>
+          <p class="email-id">example@gmail.com</p>
+          <h5>+94 - 012345678</h5>
         </div>
+        <div class="footer-col">
+          <h3>Links <div class="underline"><span></span></div></h3>
+          <ul>
+            <li><a href="./ss.html">Home</a></li>
+            <li><a href="#">Quiz</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Newsletter <div class="underline"><span></span></div></h3>
+          <form name="newsletter" method="post">
+            <img class="mail" src="./mail.svg" alt="mail-icon">
+            <input type="email" placeholder="enter your e-mail id" required>
+            <button type="submit"><img class="arrow" src="./arrow.svg" alt="arrow-icon"></button>
+          </form>
+          <div class="socials">
+            <a href="#"><img src="./content/facebook1.png" alt="facebook"></a>
+            <a href="#"><img src="./content/instagram.png" alt="instagram"></a>
+            <a href="#"><img src="./content/twitter.png" alt="twitter"></a>
+          </div>
+        </div>
+        
       </div>
     </section>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
-      integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"
-      integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./script.js"></script>
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
   </body>
 </html>

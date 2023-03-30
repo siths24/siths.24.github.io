@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --dustypink: #dcc48e;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+ul {
+  list-style: none;
+}
+
+.active {
+  color: bisque;
+  border-bottom: 3px solid #ccc;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #808080;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.25rem;
+  color: blanchedalmond;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-position: bottom;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./content/concert.2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content {
+  margin-bottom: 10rem;
+  color: blanchedalmond;
+  text-align: center;
+}
+.header-content h2 {
+  font-size: 3vmin;
+  margin-bottom: 1rem;
+  margin-inline: 5rem;
+}
+
+.line {
+  width: 150px;
+  height: 0.25rem;
+  background: rgba(229, 113, 67, 0.667);
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 3vmin;
+  margin-top: 50px;
+  margin-bottom: 2px;
+}
+
+.ctn {
+  padding: 0.5rem 1rem;
+  background: rgba(229, 113, 67);
+  border-radius: 2rem;
+  color: blanchedalmond;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 6rem;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .shop-btn{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 35px;
+  cursor: pointer;
+}
+
+section {
+  width: 80%;
+  margin: 3.2rem auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 3vmin;
+  color: rgb(98, 146, 149);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  overflow-x: hidden; */
+}
+.row .col img {
+  width: 14rem;
+}
+
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: clamp(300px, 15vw, 20vw);
+}
+
+#events .row {
+  margin-top: 50px;
+}
+
+#events h4 {
+  font-size: 3vmin;
+  color: #808080;
+  margin: 20px auto;
+}
+
+#events p {
+  color: #808080;
+  padding: 0px 40px;
+}
+
+#events .ctn {
+  margin-top: 30px;
+}
+
+.sports {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.sports-content {
+  width: 35%;
+  height: 90vh;
+  padding: 20px;
+  color: rgb(13, 67, 115);
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sports-content h1 {
+  font-size: 6vmin;
+}
+
+.sports-content .line {
+  margin-bottom: 50px;
+}
+
+.sports-content p {
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.sports-content ctn {
+  margin-top: 40px;
+}
+
+.sports-vid {
+  width: 65%;
+  height: 90vh;
+  position: relative;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgb(113, 113, 114);
+  opacity: 0.8;
+}
+
+.exhibit {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.exhibit-img {
+  width: 50%;
+  overflow-x: hidden;
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.exhibit-img img {
+  transition: none;
+}
+
+.exhibit-img img:hover{
+  transform: none;
+}
+
+.exhibit-content {
+  width: 50%;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.exhibit-content h1 {
+  font-size: 6vmin;
+}
+
+.exhibit-content p {
+  margin-block: 1rem;
+  margin-bottom: 1.2rem;
+}
+/* .exhibit-img{
+    width: auto;
+    height: 40vh;
+    background-image: url(./content/mbfw.2.JPG);
+    display: flex;
+    justify-content: space-between;
+} */
+
+.tours {
+  margin: 3rem 0 0;
+  width: 100%;
+  min-height: 70vh;
+}
+
+.tours .row{
+  justify-content: center;
+}
+
+.tours .content-col {
+  width: 40%;
+  
+}
+
+.tours .image-col {
+  width: 60%;
+}
+
+.tours .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.tours .image-gallery img {
+  min-width: 22rem;
+  margin: 5px;
+}
+
+.tours .content-col{
+  width: 35%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-col h1{
+  font-size: 6vmin;
+}
+
+.content-col p{
+  margin-block: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.footer {
+  width: 100%;
+  padding: 30px 0 30px;
+  margin: 2.2rem 0 0;
+  background: linear-gradient(to right, #41424a,#e97650fc);
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  border-top-left-radius: 6rem;
+}
+
+.footer-row{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-col{
+  flex-basis: 30.2%;
+  padding: 1.5rem;
+}
+
+.footer-col:nth-child(2), .footer-col:nth-child(3){
+  flex-basis: 15%;
+}
+
+.footer-col h3{
+  width: fit-content;
+  margin-bottom: 1.8rem;
+  position: relative;
+}
+
+.footer-col .email-id{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.footer-col ul li{
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a{
+  color: #fff;
+}
+
+
+.footer-col form{
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+
+.footer-col .mail{
+  width: 25px;
+  color: #ccc;
+  margin-right: 10px;
+}
+
+.footer-col form input{
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+button{
+  background: transparent;
+  color: #ccc;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.arrow{
+  width: 30px;
+}
+
+.socials{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.socials img{
+  width: 2.2rem;
+  cursor: pointer;
+}
+
+.underline{
+  width: 110%;
+  height: 0.2rem;
+  background-color: #cccccc77;
+  border-radius: 3px;
+  position: absolute;
+  top: 1.25rem;
+  left: 0;
+}
+
+/* .footer .footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+}
+.footer-col h4 {
+  margin-top: 0;
+  font-size: 3vmin;
+}
+.footer-col p {
+  font-size: 2.5vmin; 
+}*/
+
+@media only screen and (max-width: 850px) {
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: #808080;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+  .header-content h2 {
+    margin-inline: 2rem;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .mobile-menu {
+    margin-top: 0px;
+    border-bottom-right-radius: 20%;
+  }
+  .nav-links li {
+    margin: 30px auto;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .row .col {
+    margin: 20px auto;
+  }
+  .col img {
+    max-width: 90%;
+  }
+  .sports-content {
+    width: 100%;
+  }
+  .tours .col {
+    width: 100%;
+  }
+  .image-gallery {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer {
+    padding: 1rem;
+  }
+  .footer-row{
+    flex-direction: column;
+  }
+  .footer-col form{
+    margin-bottom: 1rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.ctn:hover {
+  background: #f6d8d8;
+  color: #808080;
+  box-shadow: 2px 2px 5px black;
+}
+
+a:hover {
+  color: beige;
+  cursor: pointer;
+}
