@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gunmetal: #13333e;
+  --cambridgeblue--: #77878b;
+  --grey--: #c0d1d3;
+  --white--: #fbfbff;
+  --coral--: #e97650;
+  --tan--: #be8a60;
+  --tusk: #cdbfbc;
+  --black: #101014;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-position: bottom;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./content/concert.2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content {
+  margin-bottom: 10rem;
+  color: blanchedalmond;
+  text-align: center;
+}
+.header-content h2 {
+  font-size: 3vmin;
+  margin-bottom: 1rem;
+  margin-inline: 5rem;
+  font-weight: 500;
+}
+
+.line {
+  width: 150px;
+  height: 0.25rem;
+  background: rgba(229, 113, 67, 0.667);
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 3vmin;
+  margin-top: 50px;
+  margin-bottom: 2px;
+}
+
+.ctn {
+  padding: 0.5rem 1rem;
+  background: var(--coral--);
+  border-radius: 2rem;
+  color: var(--black);
+  font-weight: bold;
+}
+
+section {
+  width: 80%;
+  margin: 2.5rem auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 5vmin;
+  color: var(--black);
+}
+
+#events{
+    margin-bottom: 1rem;
+}
+
+#events .row {
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  margin-top: 50px;
+  overflow-x: hidden;
+}
+
+#events .row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: clamp(300px, 15vw, 20vw);
+}
+
+.row .col img {
+  width: 14rem;
+}
+
+#events h1 {
+  font-size: 4vmin;
+  color: var(--black);
+  margin: 20px auto;
+}
+
+#events p {
+  color: #808080;
+  padding: 0px 40px;
+}
+
+#events .ctn {
+  margin-block: 1.5rem;
+}
+
+.sports {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.sports-content {
+  width: 35%;
+  padding: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sports-content h1 {
+  font-size: 5vmin;
+}
+
+.sports-content .line {
+  margin-bottom: 1.7rem;
+}
+
+.sports-content p {
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.sports-vid {
+  width: 65%;
+  height: 90vh;
+  position: relative;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgb(113, 113, 114);
+  opacity: 0.8;
+}
+
+.exhibit {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.exhibit-img {
+  width: 50%;
+  overflow-x: hidden;
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.exhibit-img img {
+  transition: none;
+  height: 100%;
+}
+
+.exhibit-img img:hover {
+  transform: none;
+}
+
+.exhibit-content {
+  width: 50%;
+  padding: 0 2rem;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.exhibit-content h1 {
+  font-size: 5vmin;
+  text-align: right;
+}
+
+.exhibit-content p {
+  margin-block: 1rem;
+  margin-bottom: 1.2rem;
+  text-align: right;
+}
+/* .exhibit-img{
+    width: auto;
+    height: 40vh;
+    background-image: url(./content/mbfw.2.JPG);
+    display: flex;
+    justify-content: space-between;
+} */
+
+.tours {
+  margin: 3rem 0 0;
+  width: 100%;
+  min-height: 64vh;
+}
+
+.tours .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tours .image-col {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tours .image-gallery {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  align-items: center; */
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding-right: 1rem;
+}
+
+.tours .image-gallery img {
+  width: 20rem;
+}
+
+.tours .content-col {
+  width: 50%;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-col h1 {
+  font-size: 5vmin;
+}
+
+.content-col p {
+  margin-block: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.theatre {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-top: 0.8rem;
+}
+
+.theatre-img {
+  width: 50%;
+  overflow-x: hidden;
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.theatre-img img {
+  height: 100%;
+  transition: none;
+}
+
+.theatre-img img:hover {
+  transform: none;
+}
+
+.theatre-content {
+  width: 50%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.theatre-content h1 {
+  font-size: 5vmin;
+}
+
+.theatre-content p {
+  margin-block: 1rem;
+  margin-bottom: 1.2rem;
+}
+/* .exhibit-img{
+      width: auto;
+      height: 40vh;
+      background-image: url(./content/mbfw.2.JPG);
+      display: flex;
+      justify-content: space-between;
+  } */
+
+/* .footer .footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+}
+.footer-col h4 {
+  margin-top: 0;
+  font-size: 3vmin;
+}
+.footer-col p {
+  font-size: 2.5vmin; 
+}*/
+
+@media only screen and (max-width: 850px) {
+  .header-content h2 {
+    margin-inline: 2rem;
+  }
+
+  p{
+    font-size: 0.8rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row .col {
+    margin: 20px auto;
+  }
+
+  .col img {
+    max-width: 90%;
+  }
+
+  .exhibit-content{
+    padding-right: 1rem;
+  }
+
+  .sports{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sports-vid{
+    width: 100%;
+    height: 64%;
+  }
+
+  .sports-content {
+    width: 100%;
+    padding-inline: 2rem;
+    background-color: #cccccc77;
+  }
+
+  .tours .col {
+    width: 100%;
+  }
+
+  .tours .image-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tours .image-gallery {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    padding-inline: 1rem;
+  }
+
+  .tours .image-gallery img {
+    min-width: 23rem;
+  }
+
+  .tours .content-col p{
+    margin-inline: 2%;
+  }
+
+  .theatre-content{
+    padding-left: 1rem;
+  }
+}
+
+/* @media (min-width: 768px) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+} */
+
+.ctn:hover {
+  background: var(--tusk);
+  color: var(--black);
+  /* box-shadow: 2px 2px 5px black; */
+}

@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tickatary - homepage</title>
-    <link rel="stylesheet" href="style_2.css" />
+    <link rel="stylesheet" href="./External.css" />
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
     <nav class="navbar">
-      <h1 class="logo">Ticketary</h1>
+      <h1 class="logo"><a href="#">Ticketary</a></h1>
       <ul class="nav-links">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">Gallery</a></li>
@@ -42,7 +43,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <img src="./content/2.png" alt="poster" />
+          <a href="#" class="add"><img src="./content/2.png" alt="poster" /></a>
           <h4>Lorem Ipsum</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -82,14 +83,14 @@
 
     <section class="exhibit">
       <div class="exhibit-content">
-        <h1>Exhibits</h1>
+        <h1>Conferences & Exhibits</h1>
         <div class="line"></div>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           et magnis dis parturient montes, nascetur ridiculus mus.
         </p>
-        <a href="#" class="ctn">Learn more</a>
+        <a href="http://127.0.0.1:5500/Exhibits.html" class="ctn">Learn more</a>
       </div>
       <section class="exhibit-img">
         <img src="./content/exhibition.1.jpg" alt="poster" />
@@ -138,11 +139,11 @@
       </div>
     </section>
 
-    <section class="exhibit">
-      <section class="exhibit-img">
+    <section class="theatre">
+      <section class="theatre-img">
         <img src="./content/concert.4.jpg" alt="poster" />
       </section>
-      <div class="exhibit-content">
+      <div class="theatre-content">
         <h1>Performing Arts</h1>
         <div class="line"></div>
         <p>
@@ -156,31 +157,31 @@
 
     <section class="footer">
       <div class="footer-row">
+        
         <div class="footer-col">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        </div>
-        <div class="footer-col">
-          <h3>Office <div class="underline"><span></span></div></h3>
-          <p>4039 Sand Fork Road</p>
-          <p>Plymouth</p>
-          <p>Indiana</p>
-          <p class="email-id">example@gmail.com</p>
-          <h5>+94 - 012345678</h5>
-        </div>
-        <div class="footer-col">
-          <h3>Links <div class="underline"><span></span></div></h3>
+          <h3>Links <div class="underline"></div></h3>
           <ul>
             <li><a href="./ss.html">Home</a></li>
+            <li><a href="#">Gallery</a></li>
             <li><a href="#">Quiz</a></li>
             <li><a href="#">Sitemap</a></li>
             <li><a href="#">Feedback</a></li>
+            <li><a href="#">About us</a></li>
             <li><a href="#">Shop</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
-          <h3>Newsletter <div class="underline"><span></span></div></h3>
+          <h3>Office <div class="underline"></div></h3>
+          <p>4039 Sand Fork Road</p>
+          <p>Plymouth</p>
+          <p>Indiana</p>
+          <a href="mailto:sithulimalwana@gmail.com" class="email-id">example@gmail.com</a>
+          <h5>+94 - 012345678</h5>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Newsletter <div class="underline"></div></h3>
           <form name="newsletter" method="post">
             <img class="mail" src="./svg/mail.svg" alt="mail-icon">
             <input type="email" placeholder="enter your e-mail id" required>
@@ -192,9 +193,15 @@
             <a href="#"><img src="./content/twitter.png" alt="twitter"></a>
           </div>
         </div>
-        
+        <div class="page-editor">
+          <a href="#"><img src="./svg/document.svg" alt="page-editor"></a>
+        </div>
       </div>
+      <hr>
+      <p class="hr">&#169; 2023 All Rights Reserved</p>
     </section>
+
+    
 
     <script>
       const menuBtn = document.querySelector(".menu-btn");
