@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./External.css" />
+    <link rel="stylesheet" href="./style_page-editor.css" />
+    <title>Ticketary - Sithuli Malwana</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo"><a href="#">Ticketary</a></h1>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Quiz</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="./comment-form.html">Feedback</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+      <a href="#"><img src="./svg/shop.svg" alt="Shop" class="shop-btn" /></a>
+      <img src="./svg/bar_3.svg" alt="Menu" class="menu-btn" />
+    </nav>
+
+    <section class="container">
+      <div class="page-container">
+        <h2>Page Editor</h2>
+        <div class="info">
+          <p>-------------------------------------</p>
+          <p>Name : Sithuli Malwana</p>
+          <p>Role : Student 02</p>
+          <p>UoW no. : 19564173</p>
+          <p>Student no. : 20221488</p>
+          <p>-------------------------------------</p>
+        </div>
+        <div class="details">
+
+          <div class="content">
+            <h4>Main page</h4>
+            <p>
+              The main page of the website was created using HTML, CSS and
+              JavaScript in order to create a responsive webpage which includes
+              the links to the extra content pages created by each student.
+            </p>
+            <p>
+              Created a responsive navigation bar and footer which was later
+              adapted by the other group members.
+            </p>
+            <a href="./index.html" class="ctn">Main Page</a>
+          </div>
+
+          <div class="content">
+            <h4>Comments Form</h4>
+            <p>
+              Created a page for the Feed-back form which contains questions
+              inregards to the user experience when using the website.
+            </p>
+            <p>
+              In order to create an interface that is user-friendly, the default
+              styles of the form elements were changed using the aid of CSS.
+            </p>
+            <p>JavaScript was used in order to validate the user inputs such as name, email and etc.
+              In addition the API Formspree.io was used to email the response of the Feed-back form.
+            </p>
+            <a href="./comment-form.html" class="ctn">Comments Form</a>
+          </div>
+
+          <div class="content">
+            <h4>Extra Content Page</h4>
+            <p>The extra content page was created based on the theme of the website therefore contains 
+              images and descriptions regarding Conferences and Exhibitions along with posters that contains 
+              details of upcoming events in the specified field.
+            </p>
+            <p>The basic layout was discussed within the group members to create cohesion and to maintain
+              the consistency within the webpages.
+            </p>
+            <p>CSS was used in order to create the layout and the structure for a minimalistic yet modern webpage
+              and the CSS grid layout was used to create the section containing the posters.
+            </p>
+            <p>Anchor tags are introduced at the intial stage of the webpage to navigate to a specific section 
+              within the extra content page.
+            </p>
+            <a href="./Exhibits.html" class="ctn">Extra Content Page</a>
+          </div>
+
+          <div class="content">
+            <h4>External Style Sheet</h4>
+            <p>Created an External style sheet containing the common elements within each webpage 
+              which was later adapted by the other group members, to maintain the consistency of the colour palette,
+              font type, font size and etc.
+            </p>
+            <a href="./External.css" class="ctn">External CSS</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h3>
+            Links
+            <div class="underline"></div>
+          </h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Quiz</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="./comment-form.html">Feedback</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>
+            Office
+            <div class="underline"></div>
+          </h3>
+          <p>4039 Sand Fork Road</p>
+          <p>Plymouth</p>
+          <p>Indiana</p>
+          <a href="mailto:sithulimalwana@gmail.com" class="email-id"
+            >example@gmail.com</a
+          >
+          <h5>+94 - 012345678</h5>
+        </div>
+
+        <div class="footer-col">
+          <h3>
+            Newsletter
+            <div class="underline"></div>
+          </h3>
+          <form name="newsletter" method="post" action="mailto:sithulimalwana@gmail.com">
+            <img class="mail" src="./svg/mail.svg" alt="mail-icon" />
+            <input type="email" placeholder="enter your e-mail id" required />
+            <button type="submit">
+              <img class="arrow" src="./svg/arrow.svg" alt="arrow-icon" />
+            </button>
+          </form>
+          <div class="socials">
+            <a href="#"><img src="./content/facebook1.png" alt="facebook" /></a>
+            <a href="#"
+              ><img src="./content/instagram.png" alt="instagram"
+            /></a>
+            <a href="#"><img src="./content/twitter.png" alt="twitter" /></a>
+          </div>
+        </div>
+        <div class="page-editor">
+          <a href="./page-editor.html"><img src="./svg/document.svg" alt="page-editor" /></a>
+        </div>
+      </div>
+      <hr />
+      <p class="hr">&#169; 2023 All Rights Reserved</p>
+    </section>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>

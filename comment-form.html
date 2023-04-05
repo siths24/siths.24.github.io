@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticketary - Feed-back</title>
+    <link rel="stylesheet" href="./External.css" />
+    <link rel="stylesheet" href="style_comments.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo"><a href="#">Ticketary</a></h1>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Quiz</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li class="active"><a href="./comment-form.html">Feedback</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+      <a href="#"><img src="./svg/shop.svg" alt="Shop" class="shop-btn" /></a>
+      <img src="./svg/bar_3.svg" alt="Menu" class="menu-btn" />
+    </nav>
+
+    <section class="container">
+      <div class="form">
+        <form id="feedback">
+          <h2>Personal Information</h2>
+          <div class="input-group">
+            <label>Full Name</label>
+            <input
+              type="text"
+              placeholder="enter your name"
+              id="contact-name"
+              name="Name"
+            />
+            <span id="name-error"></span>
+          </div>
+
+          <div class="input-group">
+            <label>Phone Number</label>
+            <input
+              type="tel"
+              placeholder="enter your phone no."
+              id="contact-number"
+              name="Contact No."
+            />
+            <span id="phone-error"></span>
+          </div>
+
+          <div class="input-group">
+            <label>Email Id</label>
+            <input
+              type="email"
+              placeholder="enter your email"
+              id="contact-email"
+              name="E-mail"
+            />
+            <span id="email-error"></span>
+          </div>
+          <!-- <div class="survey"> -->
+            <div class="survey-container">
+              <h2>We'd love your Feedback...</h2>
+              <div class="survey-form">
+                <div class="question">
+                  <label for="Question01"
+                    >01. Is this your first time visiting our website?</label
+                  >
+                  <div class="alignment">
+                    <label for="1.1">Yes</label>
+                    <input type="radio" name="Question01" id="1.1" value="Yes"/>
+                  </div>
+                  <div class="alignment">
+                    <label for="1.2">No</label>
+                    <input type="radio" name="Question01" id="1.2" value="No"/>
+                  </div>
+                  <span id="Question01-error"></span>
+                </div>
+
+                <div class="question">
+                  <label for="Question02"
+                    >02. Were you satisfied with the quality of the
+                    content?</label
+                  >
+                  <div class="alignment">
+                    <label for="2.1">Yes</label>
+                    <input
+                      type="radio"
+                      name="Question02"
+                      id="2.1"
+                      value="Yes"
+                    />
+                  </div>
+                  <div class="alignment">
+                    <label for="2.2">Average</label>
+                    <input
+                      type="radio"
+                      name="Question02"
+                      id="2.2"
+                      value="Average"
+                    />
+                  </div>
+                  <div class="alignment">
+                    <label for="2.3">No</label>
+                    <input
+                      type="radio"
+                      name="Question02"
+                      id="2.3"
+                      value="No"
+                    />
+                  </div>
+                  <span id="Question02-error"></span>
+                  <div id="Q2-display">
+                    <label
+                      >~ Brief us on the reason for the above rating.</label
+                    >
+                    <textarea
+                      rows="5"
+                      placeholder="enter your message..."
+                      id="rating"
+                      name="Rating-feedback"
+                    ></textarea>
+                    <span id="message-error"></span>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <label for="3.1"
+                    >03. How did you hear about Ticketary?
+                  </label>
+                  <div class="alignment">
+                    <select name="Question03" id="3.1">
+                      <option value="social media">Social Media</option>
+                      <option value="peers">Peers</option>
+                      <option value="ads">Advertisements</option>
+                      <option value="news">Newsletter</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="question">
+                  <label for="Question04"
+                    >04. What is the likelihood that you will visit our website
+                    again?</label
+                  >
+                  <div class="alignment">
+                    <label for="4.1">Very Likely</label>
+                    <input type="radio" name="Question04" id="4.1" value="Very Likely"/>
+                  </div>
+                  <div class="alignment">
+                    <label for="4.2">Moderately Likely</label>
+                    <input type="radio" name="Question04" id="4.2" value="Moderately Likely"/>
+                  </div>
+                  <div class="alignment">
+                    <label for="4.3">Very Un-likely</label>
+                    <input type="radio" name="Question04" id="4.3" value="Very Un-likely"/>
+                  </div>
+                  <span id="Question04-error"></span>
+                </div>
+
+                <div class="question">
+                  <label for="Question05"
+                    >05. Please share any additional comments &
+                    suggestions.</label
+                  >
+                  <textarea
+                    name="Question05"
+                    rows="6"
+                    id="message"
+                    placeholder="Leave a feedback and help us improve"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+          <div class="btn">
+            <button type="submit">Submit</button>
+            <button onclick="resetForm()" type="reset">Reset</button>
+          </div>
+        </form>
+        <div id="submit-message">
+          <h2>Thank You!</h2>
+          <p>We love hearing from you! Thank you for leaving us a feedback.</p></div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h3>
+            Links
+            <div class="underline"></div>
+          </h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Quiz</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="./comment-form.html">Feedback</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>
+            Office
+            <div class="underline"></div>
+          </h3>
+          <p>4039 Sand Fork Road</p>
+          <p>Plymouth</p>
+          <p>Indiana</p>
+          <a href="mailto:sithulimalwana@gmail.com" class="email-id"
+            >example@gmail.com</a
+          >
+          <h5>+94 - 012345678</h5>
+        </div>
+
+        <div class="footer-col">
+          <h3>
+            Newsletter
+            <div class="underline"></div>
+          </h3>
+          <form name="newsletter" method="post">
+            <img class="mail" src="./svg/mail.svg" alt="mail-icon" />
+            <input type="email" placeholder="enter your e-mail id" required />
+            <button type="submit">
+              <img class="arrow" src="./svg/arrow.svg" alt="arrow-icon" />
+            </button>
+          </form>
+          <div class="socials">
+            <a href="#"><img src="./content/facebook1.png" alt="facebook" /></a>
+            <a href="#"
+              ><img src="./content/instagram.png" alt="instagram"
+            /></a>
+            <a href="#"><img src="./content/twitter.png" alt="twitter" /></a>
+          </div>
+        </div>
+        <div class="page-editor">
+          <a href="./page-editor.html"><img src="./svg/document.svg" alt="page-editor" /></a>
+        </div>
+      </div>
+      <hr />
+      <p class="hr">&#169; 2023 All Rights Reserved</p>
+    </section>
+
+    <script src="./comments.js"></script>
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>

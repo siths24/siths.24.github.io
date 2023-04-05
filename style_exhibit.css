@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+  --gunmetal: #13333e;
+  --cambridgeblue--: #77878b;
+  --grey--: #c0d1d3;
+  --white--: #fbfbff;
+  --coral--: #e97650;
+  --tan--: #be8a60;
+  --tusk: #cdbfbc;
+  --black: #101014;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 80vh;
+  background-position: bottom;
+  background-image: linear-gradient(#10101477, #10101422),
+    url(./content/conference.2.1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content {
+  margin-bottom: 3rem;
+  color: var(--white--);
+  text-align: center;
+}
+.header-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-inline: 5rem;
+}
+
+.line {
+  width: 150px;
+  height: 0.25rem;
+  background: rgba(229, 113, 67, 0.667);
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 3vmin;
+  margin-top: 50px;
+  margin-bottom: 2px;
+}
+
+.ctn {
+  padding: 0.5rem 1rem;
+  background: var(--coral--);
+  border-radius: 2rem;
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1.8vmin;
+}
+
+/* Exhibit content */
+#exhibits{
+  width: 100vw;
+  height: 60vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#exhibits h2{
+  margin-left: 2rem;
+} 
+
+#exhibits .line{
+  margin-left: 0;
+}
+
+.exhibits-container{
+  width: 100%;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.exhibits-content{
+  width: 50%;
+  padding-inline: 2rem;
+}
+
+.exhibits-content p{
+  font-size: 1rem;
+}
+
+/* posters */
+.posters{
+  width: 100vw;
+  height: 80%;
+}
+
+.posters h2{
+  padding-top: 0.7rem;
+  text-align: center;
+  color: var(--gunmetal);
+}
+
+.posters .grid{
+  display: grid;
+  grid-gap: 2rem;
+  padding-inline: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.posters .col{
+  height: 103%;
+}
+
+.content-img{
+  width: 100%;
+}
+
+.content-img img{
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.grid h3, .grid p{
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+/* conference content */
+#conference{
+  width: 100vw;
+  height: 60vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#conference h2{
+  margin-left: 2rem;
+} 
+
+#conference .line{
+  margin-left: 0;
+}
+
+.conference-container{
+  width: 100%;
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.conference-content{
+  width: 50%;
+  padding-inline: 2rem;
+}
+
+.conference-content p{
+  font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 850px) {
+  .header-content p {
+    margin-inline: 2rem;
+    font-size: 0.8rem;
+  }
+
+  #exhibits{
+    height: auto;
+    padding: 0;
+  }
+
+  #exhibits h2{
+    padding-top: 2rem;
+  }
+
+  .posters{
+    height: auto;
+  }
+
+  .posters .line{
+    margin: 2px auto;
+  }
+
+  .posters .grid{
+    padding-top: 1rem;
+    padding-bottom: 5%;
+    padding-inline: 2rem;
+    grid-gap: 4%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .posters .col{
+    height: 104%;
+  }
+
+  .posters .col p{
+    font-size: 0.8rem;
+  }
+
+  #conference{
+    height: auto;
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  #conference h2{
+    padding-top: 2rem;
+  }
+
+  .exhibits-content, .conference-content{
+    font-size: 0.8rem;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+}
+
+.ctn:hover {
+  background: var(--white--);
+  color: var(--coral--);
+  box-shadow: 2px 2px 5px rgb(154, 154, 154);
+}
+
+a:hover {
+  color: beige;
+  cursor: pointer;
+}
+
+.ctn:hover {
+  background: var(--tusk);
+  color: var(--black);
+}
+
+img {
+  transition: none;
+}
+
+img:hover {
+  transform: none;
+}

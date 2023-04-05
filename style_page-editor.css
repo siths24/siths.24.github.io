@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gunmetal: #13333e;
+  --cambridgeblue--: #77878b;
+  --grey--: #c0d1d3;
+  --white--: #fbfbff;
+  --coral--: #e97650;
+  --tan--: #be8a60;
+  --tusk: #cdbfbc;
+  --black: #101014;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0)),
+    url(./content/bg2.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
+.page-container{
+    background-color: var(--white--);
+    width: 45rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+h2{
+    padding-block: 1.5rem;
+    font-size: 4vmin;
+}
+
+.details{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-inline: 1rem;
+  margin-block: 1.5rem;
+}
+
+.content{
+  margin-block: 1.5rem;
+}
+
+.content h4{
+  margin-bottom: 0.5rem;
+  font-weight: bolder;
+}
+
+.content p{
+  margin-bottom: 0.6rem;
+  line-height: 1.7rem;
+}
+
+.ctn {
+  padding: 0.4rem 1rem;
+  background: var(--coral--);
+  border-radius: 2rem;
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1.8vmin;
+}
+
+.footer{
+    margin: 0;
+}
+
+@media only screen and (max-width: 850px){
+  .page-container{
+    width: 85%;
+    height: auto;
+  }
+}
